@@ -3,7 +3,7 @@
  */
 import React from 'react';
 
-const { PropTypes } = React;
+import PropTypes from 'prop-types';
 
 /**
  * React Native's layout system is based on Flexbox and is powered both
@@ -44,22 +44,13 @@ const LayoutPropTypes = {
   borderBottomWidth: PropTypes.number,
   borderLeftWidth: PropTypes.number,
 
-  position: PropTypes.oneOf([
-    'absolute',
-    'relative'
-  ]),
+  position: PropTypes.oneOf(['absolute', 'relative']),
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
-  flexDirection: PropTypes.oneOf([
-    'row',
-    'column'
-  ]),
+  flexDirection: PropTypes.oneOf(['row', 'column']),
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
-  flexWrap: PropTypes.oneOf([
-    'wrap',
-    'nowrap'
-  ]),
+  flexWrap: PropTypes.oneOf(['wrap', 'nowrap']),
 
   // How to align children in the main direction
   // https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
@@ -68,17 +59,12 @@ const LayoutPropTypes = {
     'flex-end',
     'center',
     'space-between',
-    'space-around'
+    'space-around',
   ]),
 
   // How to align children in the cross direction
   // https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
-  alignItems: PropTypes.oneOf([
-    'flex-start',
-    'flex-end',
-    'center',
-    'stretch'
-  ]),
+  alignItems: PropTypes.oneOf(['flex-start', 'flex-end', 'center', 'stretch']),
 
   // How to align the element in the cross direction
   // https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
@@ -87,7 +73,7 @@ const LayoutPropTypes = {
     'flex-start',
     'flex-end',
     'center',
-    'stretch'
+    'stretch',
   ]),
 
   // https://developer.mozilla.org/en-US/docs/Web/CSS/flex

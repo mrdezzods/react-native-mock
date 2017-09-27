@@ -3,15 +3,20 @@
  */
 import React from 'react';
 
-const { PropTypes } = React;
+import PropTypes from 'prop-types';
 
 const arrayOfNumberPropType = PropTypes.arrayOf(PropTypes.number);
 
-const transformMatrixPropType = function (props, propName, componentName, ...rest) {
+const transformMatrixPropType = function(
+  props,
+  propName,
+  componentName,
+  ...rest
+) {
   if (props.transform && props.transformMatrix) {
     return new Error(
       'transformMatrix and transform styles cannot be used on the same ' +
-      'component'
+        'component',
     );
   }
   return arrayOfNumberPropType(props, propName, componentName, ...rest);
@@ -32,7 +37,7 @@ const transformPropTypes = {
       PropTypes.shape({ translateY: PropTypes.number }),
       PropTypes.shape({ skewX: PropTypes.string }),
       PropTypes.shape({ skewY: PropTypes.string }),
-    ])
+    ]),
   ),
   transformMatrix: transformMatrixPropType,
 };

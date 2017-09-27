@@ -13,20 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RealOrangeOne/react-native-mock.git"
+    "url": "git+https://github.com/mrdezzods/react-native-mock.git"
   },
-  "keywords": [
-    "react",
-    "react-native",
-    "mock",
-    "testing"
-  ],
+  "keywords": ["react", "react-native", "mock", "testing"],
   "author": "Jake Howard <git@theorangeone.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RealOrangeOne/react-native-mock/issues"
+    "url": "https://github.com/mrdezzods/react-native-mock/issues"
   },
-  "homepage": "https://github.com/RealOrangeOne/react-native-mock#readme",
+  "homepage": "https://github.com/mrdezzods/react-native-mock#readme",
   "devDependencies": {
     "babel-cli": "6.9.0",
     "babel-core": "6.9.0",
@@ -48,6 +43,7 @@
     "cubic-bezier": "^0.1.2",
     "invariant": "^2.2.1",
     "keymirror": "^0.1.1",
+    "prop-types": "^15.6.0",
     "raf": "^3.2.0",
     "react-addons-create-fragment": "^15.4.0",
     "react-addons-perf": "^15.4.0",
